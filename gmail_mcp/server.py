@@ -10,11 +10,11 @@ instead of shelling out to scripts and parsing text output.
 import base64
 from typing import Optional
 
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer
 
 from gmail_auth import get_gmail_service
 
-mcp = FastMCP("gmail-triage")
+mcp = MCPServer("gmail-triage")
 
 _label_cache: dict[str, str] = {}
 
